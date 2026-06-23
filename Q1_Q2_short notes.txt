@@ -1,0 +1,85 @@
+Q1. Short note on Collection Framework of C# .NET.
+
+Answer - 
+The Collection Framework in C# .NET is a set of classes and interfaces used to store, manage, and manipulate groups of objects efficiently. 
+Collections provide dynamic storage, unlike arrays which have a fixed size.
+
+Features:-
+* Dynamic resizing of data.
+* Easy insertion, deletion, and searching of elements.
+* Supports generic and non-generic collections.
+* Improves code reusability and performance.
+
+Types of Collections:-
+1. Non-Generic Collections (Namespace: System.Collections)
+Store data as object type.
+Examples:-
+* ArrayList
+* Hashtable
+* Queue
+* Stack
+
+2. Generic Collections (Namespace: System.Collections.Generic)
+
+Store strongly typed data.
+Better performance and type safety.
+Examples:-
+* List<T>
+* Dictionary<TKey, TValue>
+* Queue<T>
+* Stack<T>
+
+Common Collection Interfaces:-
+* IEnumerable – Supports iteration through a collection.
+* ICollection – Defines basic collection operations.
+* IList – Represents an ordered collection.
+* IDictionary – Represents key-value pair collections.
+
+The Collection Framework in C# .NET provides flexible and efficient data structures for storing and managing data. 
+Generic collections such as List<T> and Dictionary<TKey, TValue> are preferred because they offer better type safety and performance.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Q2. Short note on Equals, ToString, and Hashcodes methods.
+
+Answer-
+Equals(), ToString(), and GetHashCode() are important methods inherited from the base System.Object class. 
+Since every class in C# ultimately derives from Object, these methods are available to all objects.
+
+1. Equals() Method
+* Used to compare two objects for equality.
+* Returns true if the objects are considered equal; otherwise, false.
+* Can be overridden to define custom comparison logic.
+
+Example:-
+
+string s1 = "Hello";
+string s2 = "Hello";
+
+Console.WriteLine(s1.Equals(s2));  // True
+
+2. ToString() Method
+* Returns a string representation of an object.
+* By default, it returns the class name.
+* Often overridden to provide meaningful information about an object.
+
+Example:-
+
+int num = 100;
+Console.WriteLine(num.ToString()); // "100"
+
+3. GetHashCode() Method
+* Returns an integer hash code for an object.
+* Used in hash-based collections such as Dictionary and Hashtable.
+* Equal objects should return the same hash code.
+
+Example:-
+
+string str = "CSharp";
+Console.WriteLine(str.GetHashCode());
+
+
+
+
+
+
